@@ -1,0 +1,52 @@
+.toggle-switch-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+  width: 150px;
+  height: 48px;
+  border: 1px solid #DDD;
+  border-left: none;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  color: #043623;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #DDDDDD;
+  transition: background-color 150ms linear;
+  cursor: pointer;
+  margin-left: 16px;
+  top: 1px;
+}
+
+.toggle.toggle-on {
+  background-color: #1EC95B;
+}
+
+.toggle .toggle-handle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #FFFFFF;
+  transition: left 150ms linear;
+}
+
+.toggle.toggle-on .toggle-handle {
+  left: 21px;
+}

@@ -1,0 +1,28 @@
+.app-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.app-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #3e3e3e;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  border: 1px solid #ffa39e;
+  border-radius: 5px;
+  background-color: #fff1f0;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}

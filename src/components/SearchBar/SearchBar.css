@@ -1,0 +1,27 @@
+.search-input-wrapper {
+  position: relative;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
+}
+.search-icon-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 43px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-input {
+  height: 48px;
+  width: 330px;
+  border: 1px solid #DDD;
+  margin-bottom: 25px;
+  padding: 0 20px 0 43px;
+  outline: none;
+  font-size: 13px;
+}
+::placeholder {
+  font-style: italic;
+  color: #999;
+}

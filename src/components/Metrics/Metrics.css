@@ -1,0 +1,42 @@
+.metrics-wrapper {
+ background-color: #f9f9f9;
+ margin-bottom: 25px;
+}
+
+.metrics-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  max-width: 500px;
+  padding: 8px;
+}
+
+.metric {
+  padding: 8px;
+}
+
+.metric-title {
+  font-size: 11px;
+  color: rgba(4,54,35,0.62);
+  height: 2em;
+  line-height: 1em;
+}
+
+.metric-value {
+  font-size: 32px;
+  line-height: 1em;
+  font-weight: 300;
+  color: #043623;
+  white-space: nowrap;
+}
+
+.metrics-loader-wrapper {
+  background-color: #f9f9f9;
+  margin-bottom: 25px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
