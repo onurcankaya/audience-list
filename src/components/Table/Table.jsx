@@ -3,7 +3,7 @@ import './Table.css'
 import { generateRandomColor } from '../../utils'
 import Loader from '../Loader/Loader'
 
-const Table = ({ data, isLoading }) => {
+const Table = ({ data, isLoading, errorMessage }) => {
   const headers = ['', 'Last Seen', 'Number of Visits', 'Engagement']
 
   const renderTableHeader = () => {
@@ -73,7 +73,7 @@ const Table = ({ data, isLoading }) => {
 
   return (
     <div>
-      {isLoading ? (
+      {isLoading && !errorMessage ? (
         <div className="table-loader-wrapper">
           <Loader />
         </div>

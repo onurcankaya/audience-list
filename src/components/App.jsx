@@ -146,8 +146,16 @@ class App extends React.Component {
             onToggle={this.onToggle}
           />
         </div>
-        <Metrics data={metrics} isLoading={isLoading} />
-        <Table data={profilesList} isLoading={isLoading} />
+        <Metrics
+          data={metrics}
+          isLoading={isLoading}
+          errorMessage={errorMessage}
+        />
+        <Table
+          data={profilesList}
+          isLoading={isLoading}
+          errorMessage={errorMessage}
+        />
         {errorMessage && <div className="error-message">{errorMessage}</div>}
       </div>
     )

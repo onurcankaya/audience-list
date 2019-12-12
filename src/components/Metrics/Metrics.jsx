@@ -2,7 +2,7 @@ import React from 'react'
 import './Metrics.css'
 import Loader from '../Loader/Loader'
 
-const Metrics = ({ data, isLoading }) => {
+const Metrics = ({ data, isLoading, errorMessage }) => {
   const renderMetrics = () => {
     const dataArray = Object.keys(data).map((key) => ({
       key,
@@ -19,7 +19,7 @@ const Metrics = ({ data, isLoading }) => {
 
   return (
     <div>
-      {isLoading ? (
+      {isLoading && !errorMessage ? (
         <div className="metrics-loader-wrapper">
           <Loader />
         </div>
