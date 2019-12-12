@@ -77,7 +77,7 @@ const Table = ({ data, isLoading, errorMessage }) => {
         <div className="table-loader-wrapper">
           <Loader />
         </div>
-      ) : data.length === 0 ? (
+      ) : data.length === 0 && !errorMessage ? (
         <div className="empty-people-list">No matching profiles</div>
       ) : (
         <table id="people" cellSpacing="0">
