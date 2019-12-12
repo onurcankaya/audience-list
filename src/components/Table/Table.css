@@ -78,3 +78,11 @@
 .table-loader-wrapper {
   padding-top: 150px;
 }
+
+.empty-people-list {
+  background-color: #EFF5F0;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #535353;
+}
