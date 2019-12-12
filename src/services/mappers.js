@@ -18,7 +18,11 @@ export const mapProfiles = (profiles) => {
       name:
         user.profile &&
         `${user.profile.firstname ? user.profile.firstname : 'Viewer'} ${
-          user.profile.lastname ? user.profile.lastname : ''
+          user.profile.lastname
+            ? user.profile.lastname
+            : user.profile.company
+            ? ' from ' + user.profile.company
+            : ' #' + user.identifier
         }`,
       company: user && user.profile && user.profile.company,
       lastSeen:
