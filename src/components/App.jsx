@@ -78,6 +78,7 @@ class App extends React.Component {
       this.setState((prevState) => ({
         offset: prevState.offset + PAGE_SIZE,
         profilesList: [...prevState.profilesList, ...newData],
+        loadMore: newData.length >= PAGE_SIZE,
       }))
     } else {
       this.setState({ loadMore: false })
