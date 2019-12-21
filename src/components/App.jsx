@@ -9,6 +9,7 @@ import { fetchMetrics, fetchProfilesList } from '../services/api'
 import './App.css'
 
 const PAGE_SIZE = 100
+const SEARCH_PARAM = qs.parse(window.location.search.substring(1)).search
 
 class App extends React.Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class App extends React.Component {
     this.state = {
       metrics: {},
       profilesList: [],
-      searchInput: '',
+      searchInput: SEARCH_PARAM,
       leadsOnly: false,
       offset: 0,
       loadMore: true,
